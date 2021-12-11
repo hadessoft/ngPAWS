@@ -1,0 +1,1290 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"ABILITY": { 
+		"prefix": "ABILITY",
+		"body": [ 
+		"ABILITY        ${1:valor1}        ${2:valor2}" 
+		], 
+		"description": "Número máximo de objetos que el jugador puede llevar" 
+	}, 
+	"ABSENT": { 
+		"prefix": "ABSENT",
+		"body": [ 
+		"ABSENT        ${1:objno}" 
+		], 
+		"description": "Tiene éxito si el objeto objno está ausente" 
+	}, 
+	"ADD": { 
+		"prefix": "ADD",
+		"body": [ 
+		"ADD        ${1:flagno1}        ${2:flagno2}" 
+		], 
+		"description": "El valor del flag flagno 1 es sumado al del flag flagno2 y el resultado es almacenado en el segundo." 
+	}, 
+	"ADJECT1": { 
+		"prefix": "ADJECT1",
+		"body": [ 
+		"ADJECT1        ${1:palabra}" 
+		], 
+		"description": "Tiene éxito si el adjetivo del primer nombre de la frase actual es 'palabra'" 
+	}, 
+	"ADJECT2": { 
+		"prefix": "ADJECT2",
+		"body": [ 
+		"ADJECT2        ${1:palabra}" 
+		], 
+		"description": "Tiene éxito si el adjetivo del segundo nombre de la frase actual es 'palabra'" 
+	}, 
+	"ADVERB": { 
+		"prefix": "ADVERB",
+		"body": [ 
+		"ADVERB        ${1:palabra}" 
+		], 
+		"description": "Tiene éxito si el adverbio de la frase actual es 'palabra'" 
+	}, 
+	"ANYKEY": { 
+		"prefix": "ANYKEY",
+		"body": [ 
+		"ANYKEY" 
+		], 
+		"description": "Espera a que el jugador pulse una tecla, haga click en la pantalla, o haga tap en la pantalla" 
+	}, 
+	"ASK": { 
+		"prefix": "ASK",
+		"body": [ 
+		"ASK        \"${1:pregunta}\"        \"${2:opciones}\"    ${3:flagno}" 
+		], 
+		"description": "ASK muestra la pregunta y espera a que una de las teclas en 'opciones' es pulsada" 
+	}, 
+	"AT": { 
+		"prefix": "AT",
+		"body": [ 
+		"AT        ${1:locno}" 
+		], 
+		"description": "Tiene éxito si el jugador está en la localidad locno." 
+	}, 
+	"ATGE": { 
+		"prefix": "ATGE",
+		"body": [ 
+		"ATGE       ${1:locno}"  
+		], 
+		"description": "Tiene éxito si el jugador está en una localidad cuyo número es superior o igual a locno." 
+	}, 
+	"ATGT": { 
+		"prefix": "ATGT",
+		"body": [ 
+		"ATGT        ${1:locno}" 
+		], 
+		"description": "Tiene éxito si el jugador está en una localidad cuyo número es superior a locno." 
+	}, 
+	"ATLE": { 
+		"prefix": "ATLE",
+		"body": [ 
+		"ATLE        ${1:locno}" 
+		], 
+		"description": "Tiene éxito si el jugador está en una localidad cuyo número es inferior o igual a locno" 
+	}, 
+	"ATLT": { 
+		"prefix": "ATLT",
+		"body": [ 
+		"ATLT        ${1:locno}" 
+		], 
+		"description": "Tiene éxito si el jugador está en una localidad cuyo número es inferior a locno" 
+	}, 
+	"AUTOD": { 
+		"prefix": "AUTOD",
+		"body": [ 
+		"AUTOD" 
+		], 
+		"description": "Versión automática de DROP" 
+	}, 
+	"AUTOG": { 
+		"prefix": "AUTOG",
+		"body": [ 
+		"AUTOG" 
+		], 
+		"description": "Versión automática de GET" 
+	}, 
+	"AUTOP": { 
+		"prefix": "AUTOP",
+		"body": [ 
+		"AUTOP" 
+		], 
+		"description": "Versión automática de PUTIN." 
+	}, 
+	"AUTOR": { 
+		"prefix": "AUTOR",
+		"body": [ 
+		"AUTOR" 
+		], 
+		"description": "Versión automática de REMOVE." 
+	}, 
+	"AUTOT": { 
+		"prefix": "AUTOT",
+		"body": [ 
+		"AUTOT" 
+		], 
+		"description": "Versión automática de TAKEOUT." 
+	}, 
+	"AUTOW": { 
+		"prefix": "AUTOW",
+		"body": [ 
+		"AUTOW" 
+		], 
+		"description": "Versión automática de WEAR" 
+	}, 
+	"BCLEAR": { 
+		"prefix": "BCLEAR",
+		"body": [ 
+		"BCLEAR        ${1:flagno}        ${2:bitno}" 
+		], 
+		"description": "Pone a 0 el bit bitno del flag flagno." 
+	}, 
+	"BEEP": { 
+		"prefix": "BEEP",
+		"body": [ 
+		"BEEP        ${1:sfxno}        ${2:channelno}        ${3:veces}" 
+		], 
+		"description": "Reproduce el sonido cuyo numero de recurso es sfxno por el canal channelno (1-16) tantas veces como 'veces'" 
+	}, 
+	"BELL": { 
+		"prefix": "BELL",
+		"body": [ 
+		"BELL" 
+		], 
+		"description": "Esta acción está obsoleta y no hace nada en ngPAWS." 
+	}, 
+	"BLOCK": { 
+		"prefix": "BLOCK",
+		"body": [ 
+		"BLOCK        \"${1:texto}\"        ${2:picno}        ${3:procno}" 
+		], 
+		"description": "Muestra una capa que cubre la pantalla del juego y dibuja el gráfico picno, después muestra el texto 'texto' debajo y espera por la pulsacion de una tecla. Cuanto se pulsa el proceso procno es llamado." 
+	}, 
+	"BNEG": { 
+		"prefix": "BNEG",
+		"body": [ 
+		"BNEG        ${1:flagno}        ${2:bitno}" 
+		], 
+		"description": "Cambia el valor del bit bitno del flag flagno, si es cero pasa a valer uno y viceversa" 
+	}, 
+	"BNOTZERO": { 
+		"prefix": "BNOTZERO",
+		"body": [ 
+		"BNOTZERO        ${1:flagno}        ${2:bitno}" 
+		], 
+		"description": "Tiene éxito si el bit bitno del flag flagno no vale cero." 
+	}, 
+	"BORDER": { 
+		"prefix": "BORDER",
+		"body": [ 
+		"BORDER        ${1:color}" 
+		], 
+		"description": "Este condacto está obsoleto y no hace nada en ngPAWS" 
+	}, 
+	"BREAK": { 
+		"prefix": "BREAK",
+		"body": [ 
+		"BREAK" 
+		], 
+		"description": "Cancela cualquier bucle DOALL en ejecución," 
+	}, 
+	"BSET": { 
+		"prefix": "BSET",
+		"body": [ 
+		"BSET        ${1:flagno}        ${2:bitno}" 
+		], 
+		"description": "Pone el bit bitno del flag flagno a 1" 
+	}, 
+	"BZERO": { 
+		"prefix": "BZERO",
+		"body": [ 
+		"BZERO        ${1:flagno}        ${2:bitno}" 
+		], 
+		"description": "Tiene éxito si el bit bitno del flag flagno vale cero" 
+	}, 
+	"CARRIED": { 
+		"prefix": "CARRIED",
+		"body": [ 
+		"CARRIED        ${1:objno}" 
+		], 
+		"description": "Tiene éxito si el jugador lleva el objeto objno" 
+	}, 
+	"CHANCE": { 
+		"prefix": "CHANCE",
+		"body": [ 
+		"CHANCE        ${1:porcentaje}" 
+		], 
+		"description": "Tiene éxito si tras calcular un número al azar entre 1-100, el numero obtenido es igual o menor que "porcentaje"" 
+	}, 
+	"CHARSET": { 
+		"prefix": "CHARSET",
+		"body": [ 
+		"CHARSET" 
+		], 
+		"description": "Este condacto está obsoleto y no se usa en ngPAWS" 
+	}, 
+	"CLEAR": { 
+		"prefix": "CLEAR",
+		"body": [ 
+		"CLEAR        ${1:flagno}" 
+		], 
+		"description": "El flag flagno. pasa a valer 0" 
+	}, 
+	"CLEAREXIT": { 
+		"prefix": "CLEAREXIT",
+		"body": [ 
+		"CLEAREXIT        ${1:palabra} " 
+		], 
+		"description": "Destruye la conexión en dirección 'palabra' desde la localidad actual." 
+	}, 
+	"CLS": { 
+		"prefix": "CLS",
+		"body": [ 
+		"CLS" 
+		], 
+		"description": "Borra la pantalla, o para ser exactos, la zona de texto y la zona de gráficos de la pantalla" 
+	}, 
+	"COMMAND": { 
+		"prefix": "COMMAND",
+		"body": [ 
+		"COMMAND        ${1:valor}" 
+		], 
+		"description": "Si el valor es cero la zona de input de órdenes del jugador desaparece, en caso contrario es visible" 
+	}, 
+	"COPYFF": { 
+		"prefix": "COPYFF",
+		"body": [ 
+		"COPYFF        ${1:flagno1}        ${2:flagno2}" 
+		], 
+		"description": "El valor del flag flagno1 es copiado en el flag flagno2" 
+	}, 
+	"COPYFO": { 
+		"prefix": "COPYFO",
+		"body": [ 
+		"COPYFO        ${1:flagno}        ${2:objno}" 
+		], 
+		"description": "El objeto objno es posicionado en la localidad cuyo valor está en el flag flagno." 
+	}, 
+	"COPYOF": { 
+		"prefix": "COPYOF",
+		"body": [ 
+		"COPYOF        ${1:objno}        ${2:flagno}" 
+		], 
+		"description": "El número de localidad donde está el objeto objno es copiada en el flag flagno." 
+	}, 
+	"COPYOO": { 
+		"prefix": "COPYOO",
+		"body": [ 
+		"COPYOO        ${1:objno1}        ${2:objno2}" 
+		], 
+		"description": "El objeto objno2 pasa a estar en la misma localidad que el objno1" 
+	}, 
+	"CREATE": { 
+		"prefix": "CREATE",
+		"body": [ 
+		"CREATE        ${1:objno}" 
+		], 
+		"description": "El objeto objno es situado en la localidad actual y el flag 1 se decrementa en 1 si el objeto objno estaba antes en las manos del jugador" 
+	}, 
+	"DEBUG": { 
+		"prefix": "DEBUG",
+		"body": [ 
+		"DEBUG" 
+		], 
+		"description": "Este condacto no se usa en ngPAWS y no hace nada" 
+	}, 
+	"DESC": { 
+		"prefix": "DESC",
+		"body": [ 
+		"DESC" 
+		], 
+		"description": "Salta a describir la localidad actual, cancelando cualquier llamada a subprocesos y cualquier bucle DOALL" 
+	}, 
+	"DESTROY": { 
+		"prefix": "DESTROY",
+		"body": [ 
+		"DESTROY        ${1:objno}" 
+		], 
+		"description": "El objeto es colocado en la localidad 252 (no creado) y el flag 1 se decrementa en 1 si el objeto estaba antes en las manos del jugador " 
+	}, 
+	"DIV": { 
+		"prefix": "DIV",
+		"body": [ 
+		"DIV        ${1:flagno}        ${2:valor}" 
+		], 
+		"description": "El contenido del flag flagno es dividido por 'valor'. Si valor es cero no se hace nada" 
+	}, 
+	"DOALL": { 
+		"prefix": "DOALL",
+		"body": [ 
+		"DOALL        ${1:locno+}" 
+		], 
+		"description": "Esta potente acción permite la implementación de órdenes con 'TODO' (COGER TODO, DEJAR TODO, etc.)" 
+	}, 
+	"DONE": { 
+		"prefix": "DONE",
+		"body": [ 
+		"DONE" 
+		], 
+		"description": "Esta acción salta al final de la tabla de procesos en ejecución diciéndole a ngPAWS que se ha finalizado un acción." 
+	}, 
+	"DROP": { 
+		"prefix": "DROP",
+		"body": [ 
+		"DROP        ${1:objno}" 
+		], 
+		"description": "Si el objeto lo llevamos puesto sale el mensaje del sistema 24 (“No puedo, lo llevo puesto”) y NEWTEXT y DONE se ejecutan" 
+	}, 
+	"DROPALL": { 
+		"prefix": "DROPALL",
+		"body": [ 
+		"DROPALL" 
+		], 
+		"description": "Todos los objetos que el jugador lleve o lleve puestos son creados en la localidad actual (es decir, como si se dejara caer todos los objetos)" 
+	}, 
+	"END": { 
+		"prefix": "END",
+		"body": [ 
+		"END" 
+		], 
+		"description": "El mensaje del sistema 13('¿Quieres jugar de nuevo?') se muestra y se espera una respuesta" 
+	}, 
+	"EQ": { 
+		"prefix": "EQ",
+		"body": [ 
+		"EQ        ${1:flagno}        ${2:valor}" 
+		], 
+		"description": "Tiene éxito si el flag flagno vale valor" 
+	}, 
+	"EXITS": { 
+		"prefix": "EXITS",
+		"body": [ 
+		"EXITS        ${1:locno}        ${2:mesno}" 
+		], 
+		"description": "EXITS lista las salidas existentes de la localidad actual." 
+	}, 
+	"EXTERN": { 
+		"prefix": "EXTERN",
+		"body": [ 
+		"EXTERN        \"${1:code}\"" 
+		], 
+		"description": "Permite ejecutar javascript directamente" 
+	}, 
+	"FADEIN": { 
+		"prefix": "FADEIN",
+		"body": [ 
+		"FADEIN        ${1:sfxno}        ${2:channelno}        ${2:veces}" 
+		], 
+		"description": "eproduce el sonido cuyo numero de recurso es sfxno por el canal channelno (1-16) tantas veces como 'veces'" 
+	}, 
+	"FADEOUT": { 
+		"prefix": "FADEOUT",
+		"body": [ 
+		"FADEOUT        ${1:channelno}        ${2:valor}" 
+		], 
+		"description": "Detiene cualquier sonido reproduciendose en el canal channelno. mediante un fade out de 'valor' milisegundos." 
+	}, 
+	"GE": { 
+		"prefix": "GE",
+		"body": [ 
+		"GE        ${1:flagno}        ${2:valor}" 
+		], 
+		"description": "Tiene éxito si el flag flagno vale más o igual que valor." 
+	}, 
+	"GET": { 
+	"prefix": "GET",
+	"body": [ 
+	"GET        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"GETEXIT": { 
+	"prefix": "GETEXIT",
+	"body": [ 
+	"GETEXIT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"GETKEY": { 
+	"prefix": "GETKEY",
+	"body": [ 
+	"GETKEY        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"GOTO": { 
+	"prefix": "GOTO",
+	"body": [ 
+	"GOTO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"GRAPHIC": { 
+	"prefix": "GRAPHIC",
+	"body": [ 
+	"GRAPHIC        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"GT": { 
+	"prefix": "GT",
+	"body": [ 
+	"GT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"HELP": { 
+	"prefix": "HELP",
+	"body": [ 
+	"HELP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"HOOK": { 
+	"prefix": "HOOK",
+	"body": [ 
+	"HOOK        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"INK": { 
+	"prefix": "INK",
+	"body": [ 
+	"INK        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"INVEN": { 
+	"prefix": "INVEN",
+	"body": [ 
+	"INVEN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISAT": { 
+	"prefix": "ISAT",
+	"body": [ 
+	"ISAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISDOALL": { 
+	"prefix": "ISDOALL",
+	"body": [ 
+	"ISDOALL        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISDONE": { 
+	"prefix": "ISDONE",
+	"body": [ 
+	"ISDONE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISLIGHT": { 
+	"prefix": "ISLIGHT",
+	"body": [ 
+	"ISLIGHT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISMOV": { 
+	"prefix": "ISMOV",
+	"body": [ 
+	"ISMOV        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISMUSIC": { 
+	"prefix": "ISMUSIC",
+	"body": [ 
+	"ISMUSIC        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTAT": { 
+	"prefix": "ISNOTAT",
+	"body": [ 
+	"ISNOTAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTDOALL": { 
+	"prefix": "ISNOTDOALL",
+	"body": [ 
+	"ISNOTDOALL        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTDONE": { 
+	"prefix": "ISNOTDONE",
+	"body": [ 
+	"ISNOTDONE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTLIGHT": { 
+	"prefix": "ISNOTLIGHT",
+	"body": [ 
+	"ISNOTLIGHT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTMOV": { 
+	"prefix": "ISNOTMOV",
+	"body": [ 
+	"ISNOTMOV        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTMUSIC": { 
+	"prefix": "ISNOTMUSIC",
+	"body": [ 
+	"ISNOTMUSIC        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTRESP": { 
+	"prefix": "ISNOTRESP",
+	"body": [ 
+	"ISNOTRESP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISNOTSOUND": { 
+	"prefix": "ISNOTSOUND",
+	"body": [ 
+	"ISNOTSOUND        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISRESP": { 
+	"prefix": "ISRESP",
+	"body": [ 
+	"ISRESP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISSOUND": { 
+	"prefix": "ISSOUND",
+	"body": [ 
+	"ISSOUND        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ISVIDEO": { 
+	"prefix": "ISVIDEO",
+	"body": [ 
+	"ISVIDEO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LE": { 
+	"prefix": "LE",
+	"body": [ 
+	"LE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LET": { 
+	"prefix": "LET",
+	"body": [ 
+	"LET        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LISTAT": { 
+	"prefix": "LISTAT",
+	"body": [ 
+	"LISTAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LISTCONTENTS": { 
+	"prefix": "LISTCONTENTS",
+	"body": [ 
+	"LISTCONTENTS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LISTNPC": { 
+	"prefix": "LISTNPC",
+	"body": [ 
+	"LISTNPC        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LISTOBJ": { 
+	"prefix": "LISTOBJ",
+	"body": [ 
+	"LISTOBJ        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LOAD": { 
+	"prefix": "LOAD",
+	"body": [ 
+	"LOAD        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"LT": { 
+	"prefix": "LT",
+	"body": [ 
+	"LT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MES": { 
+	"prefix": "MES",
+	"body": [ 
+	"MES        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MESSAGE": { 
+	"prefix": "MESSAGE",
+	"body": [ 
+	"MESSAGE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MINUS": { 
+	"prefix": "MINUS",
+	"body": [ 
+	"MINUS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MOD": { 
+	"prefix": "MOD",
+	"body": [ 
+	"MOD        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MODE": { 
+	"prefix": "MODE",
+	"body": [ 
+	"MODE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MOVE": { 
+	"prefix": "MOVE",
+	"body": [ 
+	"MOVE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"MUL": { 
+	"prefix": "MUL",
+	"body": [ 
+	"MUL        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NEWLINE": { 
+	"prefix": "NEWLINE",
+	"body": [ 
+	"NEWLINE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NEWTEXT": { 
+	"prefix": "NEWTEXT",
+	"body": [ 
+	"NEWTEXT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NORESP": { 
+	"prefix": "NORESP",
+	"body": [ 
+	"NORESP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTAT": { 
+	"prefix": "NOTAT",
+	"body": [ 
+	"NOTAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTCARR": { 
+	"prefix": "NOTCARR",
+	"body": [ 
+	"NOTCARR        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTDONE": { 
+	"prefix": "NOTDONE",
+	"body": [ 
+	"NOTDONE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTEQ": { 
+	"prefix": "NOTEQ",
+	"body": [ 
+	"NOTEQ        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTSAME": { 
+	"prefix": "NOTSAME",
+	"body": [ 
+	"NOTSAME        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTWORN": { 
+	"prefix": "NOTWORN",
+	"body": [ 
+	"NOTWORN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOTZERO": { 
+	"prefix": "NOTZERO",
+	"body": [ 
+	"NOTZERO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NOUN2": { 
+	"prefix": "NOUN2",
+	"body": [ 
+	"NOUN2        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"NPCAT": { 
+	"prefix": "NPCAT",
+	"body": [ 
+	"NPCAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OBJAT": { 
+	"prefix": "OBJAT",
+	"body": [ 
+	"OBJAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OBJFOUND": { 
+	"prefix": "OBJFOUND",
+	"body": [ 
+	"OBJFOUND        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OBJNOTFOUND": { 
+	"prefix": "OBJNOTFOUND",
+	"body": [ 
+	"OBJNOTFOUND        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OCLEAR": { 
+	"prefix": "OCLEAR",
+	"body": [ 
+	"OCLEAR        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OK": { 
+	"prefix": "OK",
+	"body": [ 
+	"OK        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ONEG": { 
+	"prefix": "ONEG",
+	"body": [ 
+	"ONEG        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ONOTZERO": { 
+	"prefix": "ONOTZERO",
+	"body": [ 
+	"ONOTZERO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OSET": { 
+	"prefix": "OSET",
+	"body": [ 
+	"OSET        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"OZERO": { 
+	"prefix": "OZERO",
+	"body": [ 
+	"OZERO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PAPER": { 
+	"prefix": "PAPER",
+	"body": [ 
+	"PAPER        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PARSE": { 
+	"prefix": "PARSE",
+	"body": [ 
+	"PARSE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PAUSE": { 
+	"prefix": "PAUSE",
+	"body": [ 
+	"PAUSE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PAUSEVIDEO": { 
+	"prefix": "PAUSEVIDEO",
+	"body": [ 
+	"PAUSEVIDEO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PICTURE": { 
+	"prefix": "PICTURE",
+	"body": [ 
+	"PICTURE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PICTUREAT": { 
+	"prefix": "PICTUREAT",
+	"body": [ 
+	"PICTUREAT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PLACE": { 
+	"prefix": "PLACE",
+	"body": [ 
+	"PLACE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PLAYVIDEO": { 
+	"prefix": "PLAYVIDEO",
+	"body": [ 
+	"PLAYVIDEO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PLUS": { 
+	"prefix": "PLUS",
+	"body": [ 
+	"PLUS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PREP": { 
+	"prefix": "PREP",
+	"body": [ 
+	"PREP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PRESENT": { 
+	"prefix": "PRESENT",
+	"body": [ 
+	"PRESENT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PRINT": { 
+	"prefix": "PRINT",
+	"body": [ 
+	"PRINT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PROCESS": { 
+	"prefix": "PROCESS",
+	"body": [ 
+	"PROCESS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PROMPT": { 
+	"prefix": "PROMPT",
+	"body": [ 
+	"PROMPT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PUTIN": { 
+	"prefix": "PUTIN",
+	"body": [ 
+	"PUTIN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"PUTO": { 
+	"prefix": "PUTO",
+	"body": [ 
+	"PUTO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"QUIT": { 
+	"prefix": "QUIT",
+	"body": [ 
+	"QUIT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RAMLOAD": { 
+	"prefix": "RAMLOAD",
+	"body": [ 
+	"RAMLOAD        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RAMSAVE": { 
+	"prefix": "RAMSAVE",
+	"body": [ 
+	"RAMSAVE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RANDOM": { 
+	"prefix": "RANDOM",
+	"body": [ 
+	"RANDOM        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RANDOMX": { 
+	"prefix": "RANDOMX",
+	"body": [ 
+	"RANDOMX        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"REMOVE": { 
+	"prefix": "REMOVE",
+	"body": [ 
+	"REMOVE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RESET": { 
+	"prefix": "RESET",
+	"body": [ 
+	"RESET        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RESP": { 
+	"prefix": "RESP",
+	"body": [ 
+	"RESP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RESTART": { 
+	"prefix": "RESTART",
+	"body": [ 
+	"RESTART        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RESUMEVIDEO": { 
+	"prefix": "RESUMEVIDEO",
+	"body": [ 
+	"RESUMEVIDEO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RNDWRITE": { 
+	"prefix": "RNDWRITE",
+	"body": [ 
+	"RNDWRITE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"RNDWRITELN": { 
+	"prefix": "RNDWRITELN",
+	"body": [ 
+	"RNDWRITELN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SAME": { 
+	"prefix": "SAME",
+	"body": [ 
+	"SAME        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SAVE": { 
+	"prefix": "SAVE",
+	"body": [ 
+	"SAVE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SCORE": { 
+	"prefix": "SCORE",
+	"body": [ 
+	"SCORE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SET": { 
+	"prefix": "SET",
+	"body": [ 
+	"SET        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SETEXIT": { 
+	"prefix": "SETEXIT",
+	"body": [ 
+	"SETEXIT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SETWEIGHT": { 
+	"prefix": "SETWEIGHT",
+	"body": [ 
+	"SETWEIGHT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SILENCE": { 
+	"prefix": "SILENCE",
+	"body": [ 
+	"SILENCE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SOFTBLOCK": { 
+	"prefix": "SOFTBLOCK",
+	"body": [ 
+	"SOFTBLOCK        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SOUND": { 
+	"prefix": "SOUND",
+	"body": [ 
+	"SOUND        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SPACE": { 
+	"prefix": "SPACE",
+	"body": [ 
+	"SPACE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SUB": { 
+	"prefix": "SUB",
+	"body": [ 
+	"SUB        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SWAP": { 
+	"prefix": "SWAP",
+	"body": [ 
+	"SWAP        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SYNONYM": { 
+	"prefix": "SYNONYM",
+	"body": [ 
+	"SYNONYM        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"SYSMESS": { 
+	"prefix": "SYSMESS",
+	"body": [ 
+	"SYSMESS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TAKEOUT": { 
+	"prefix": "TAKEOUT",
+	"body": [ 
+	"TAKEOUT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TEXTPIC": { 
+	"prefix": "TEXTPIC",
+	"body": [ 
+	"TEXTPIC        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TIME": { 
+	"prefix": "TIME",
+	"body": [ 
+	"TIME        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TIMEOUT": { 
+	"prefix": "TIMEOUT",
+	"body": [ 
+	"TIMEOUT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TITLE": { 
+	"prefix": "TITLE",
+	"body": [ 
+	"TITLE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TRANSCRIPT": { 
+	"prefix": "TRANSCRIPT",
+	"body": [ 
+	"TRANSCRIPT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"TURNS": { 
+	"prefix": "TURNS",
+	"body": [ 
+	"TURNS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"VOLUME": { 
+	"prefix": "VOLUME",
+	"body": [ 
+	"VOLUME        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"VOLUMEVIDEO": { 
+	"prefix": "VOLUMEVIDEO",
+	"body": [ 
+	"VOLUMEVIDEO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WARNINGS": { 
+	"prefix": "WARNINGS",
+	"body": [ 
+	"WARNINGS        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WEAR": { 
+	"prefix": "WEAR",
+	"body": [ 
+	"WEAR        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WEIGH": { 
+	"prefix": "WEIGH",
+	"body": [ 
+	"WEIGH        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WEIGHT": { 
+	"prefix": "WEIGHT",
+	"body": [ 
+	"WEIGHT        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WHATO": { 
+	"prefix": "WHATO",
+	"body": [ 
+	"WHATO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WHATOX": { 
+	"prefix": "WHATOX",
+	"body": [ 
+	"WHATOX        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WHATOX2": { 
+	"prefix": "WHATOX2",
+	"body": [ 
+	"WHATOX2        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WORN": { 
+	"prefix": "WORN",
+	"body": [ 
+	"WORN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WRITE": { 
+	"prefix": "WRITE",
+	"body": [ 
+	"WRITE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"WRITELN": { 
+	"prefix": "WRITELN",
+	"body": [ 
+	"WRITELN        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"YOUTUBE": { 
+	"prefix": "YOUTUBE",
+	"body": [ 
+	"YOUTUBE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ZERO": { 
+	"prefix": "ZERO",
+	"body": [ 
+	"ZERO        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}, 
+	"ZONE": { 
+	"prefix": "ZONE",
+	"body": [ 
+	"ZONE        ${1:valor1}        ${2:valor2}" 
+	], 
+	"description": " " 
+	}
+}
